@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const containerAtletas = document.getElementById("container-atletas");
     const filtroElenco = document.getElementById("filtro-elenco");
     const filtroNome = document.getElementById("filtro-nome");
+    const botaoSair = document.getElementById("botao-sair");
 
     let atletasCache = [];
 
@@ -67,4 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     carregarAtletas("https://botafogo-atletas.mange.li/2024-1/all");
+});
+    const botaoSair = document.getElementById("botao-sair");
+    botaoSair.addEventListener("click", function() {
+    sessionStorage.removeItem("logado");
+    window.location.href = "index.html";
 });
