@@ -47,3 +47,118 @@ body {
     margin-top: 25px;
     font-size: 18px;
 }
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#filtro-elenco {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#container-atletas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-atleta {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: rgb(196, 186, 169);
+}
+
+.card-atleta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px black;
+}
+
+.card-atleta img.foto-atleta {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.detalhes-atleta {
+    padding: 15px;
+    text-align: center;
+}
+
+.detalhes-atleta h2.nome-atleta {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: black;
+}
+
+.detalhes-atleta p.posicao-atleta {
+    font-size: 1em;
+    margin: 10px 0;
+    color: white;
+}
+
+.detalhes-atleta a.link-detalhes {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.detalhes-atleta a.link-detalhes:hover {
+    background-color: black;
+}
+
+#filtro-nome {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.container-atletas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+
+  @media (max-width: 768px) {
+    .container-atletas {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container-atletas {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1300px) {
+    .container-atletas {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (min-width: 1301px) {
+    .container-atletas {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
