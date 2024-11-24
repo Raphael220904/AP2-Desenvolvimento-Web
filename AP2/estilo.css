@@ -1,5 +1,5 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #conjunto-login{
@@ -8,7 +8,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-
 }
 
 #escudo{
@@ -16,16 +15,16 @@ body {
     margin-bottom:25px;
 }
 
-#container-login{
+#container-login {
     display: flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 300px;
     text-align: center;
 }
 
-#input-senha{
+#input-senha {
     width: 100%;
     padding: 10px;
     margin-bottom: 25px;
@@ -33,7 +32,7 @@ body {
     border-radius: 5px;
 }
 
-#botao-login{
+#botao-login {
     width: 50%;
     padding: 10px;
     background-color: black;
@@ -43,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-#senha{
+#senha {
     margin-top: 25px;
     font-size: 18px;
 }
@@ -64,7 +63,7 @@ header {
 
 #container-atletas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
     max-width: 1400px;
@@ -106,7 +105,7 @@ header {
 .detalhes-atleta p.posicao-atleta {
     font-size: 1em;
     margin: 10px 0;
-    color: white;
+    color: black;
 }
 
 .detalhes-atleta a.link-detalhes {
@@ -129,36 +128,66 @@ header {
     border-radius: 5px;
 }
 
-.container-atletas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+@media (max-width: 768px) {
+    #container-atletas {
+        grid-template-columns: 1fr;
+    }
+}
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    #container-atletas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-  @media (max-width: 768px) {
-    .container-atletas {
-      grid-template-columns: 1fr;
+@media (min-width: 1025px) and (max-width: 1300px) {
+    #container-atletas {
+        grid-template-columns: repeat(4, 1fr);
     }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container-atletas {
-      grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 1301px) {
+    #container-atletas {
+        grid-template-columns: repeat(5, 1fr);
     }
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1300px) {
-    .container-atletas {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  @media (min-width: 1301px) {
-    .container-atletas {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  
+}
+
+#detalhes-atleta {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(196, 186, 169);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+}
+
+#detalhes-atleta h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#detalhes-atleta img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#detalhes-atleta p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color:  black;
+    margin: 10px 0;
+}
+
+#detalhes-atleta p strong {
+    color: black;
+}
+
+#detalhes-atleta .erro {
+    color: red;
+    text-align: center;
+}
