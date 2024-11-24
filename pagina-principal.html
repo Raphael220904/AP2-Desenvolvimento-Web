@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="faveicon.ico" type="image/x-icon">
+    <script src="pagina-principal.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Elenco Botafogo 2024</h1>
+        <div id="filtro">
+            <select id="filtro-elenco">
+                <option value="all">Todos</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <input type="text" id="filtro-nome" placeholder="Filtrar por nome">
+        </div>
+    </header>
+    
+    <div id="container-atletas"></div>
+    <div id="botoes"></div>
+</body>
+</html>
