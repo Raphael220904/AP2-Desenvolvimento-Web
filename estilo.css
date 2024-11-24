@@ -191,3 +191,15 @@ header {
     color: red;
     text-align: center;
 }
+
+#detalhes-atleta .link-voltar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+}

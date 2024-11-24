@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p><strong>Nascimento:</strong> ${data.nascimento || "Dados não disponíveis"}</p>
                 <p><strong>Altura:</strong> ${data.altura || "Dados não disponíveis"}</p>
                 <p><strong>Naturalidade:</strong> ${data.naturalidade || "Dados não disponíveis"}</p>
+                <a href="pagina-principal.html" class="link-voltar">Voltar</a>
             `;
         })
         .catch(() => {
